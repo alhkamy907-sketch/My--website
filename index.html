@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a33">
+  <meta name="description" content="معرض يجمع مشاريعي ومواقعي الإلكترونية في مكان واحد.">
+  <title>معرض مواقعي | مشاريعي الرقمية</title>
+  <style>
+    :root { --ink:#18243c; --muted:#667087; --border:#e8eaf0; --purple:#6657df; --light:#f8f9ff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#f8f9fd; color:var(--ink); font-family:Tahoma, Arial, sans-serif; line-height:1.8; }
+    a { text-decoration:none; }
+    .hero { position:relative; overflow:hidden; background:linear-gradient(130deg,#121e3e,#302b6b 60%,#5745a0); color:white; padding:82px 20px 110px; text-align:center; }
+    .hero:before,.hero:after { content:''; position:absolute; border-radius:50%; pointer-events:none; background:rgba(255,255,255,.055); }
+    .hero:before { width:360px;height:360px;top:-200px;left:-100px; }
+    .hero:after { width:240px;height:240px;bottom:-125px;right:-60px; }
+    .tag { display:inline-block; padding:6px 18px; border:1px solid #ffffff57; border-radius:100px; font-size:13px; background:#ffffff12; }
+    h1 { margin:21px 0 10px; font-size:clamp(30px,5vw,50px); line-height:1.4; }
+    .hero p { max-width:620px; margin:0 auto; color:#e1e3f6; font-size:16px; }
+    main { max-width:1060px; margin:-55px auto 65px; padding:0 20px; position:relative; }
+    .intro { background:white; border:1px solid var(--border); border-radius:20px; padding:22px 27px; box-shadow:0 13px 35px #151b3810; margin-bottom:28px; }
+    .intro strong { font-size:19px; }
+    .intro p { margin:4px 0 0; color:var(--muted); font-size:14px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .card { display:flex; flex-direction:column; background:white; border:1px solid var(--border); border-radius:20px; padding:28px; box-shadow:0 5px 18px #14213c07; transition:transform .2s,box-shadow .2s; }
+    .card:hover { transform:translateY(-4px); box-shadow:0 15px 38px #14213c15; }
+    .emoji { display:grid; place-items:center; width:60px; height:60px; border-radius:16px; font-size:28px; margin-bottom:14px; }
+    .coffee { background:#fff0de; }
+    .bolt { background:#f0edff; }
+    .resume { background:#e7f5ff; }
+    .access { background:#e3f7ec; }
+    .number { color:#857acb; font-size:12px; font-weight:bold; letter-spacing:1px; }
+    h2 { margin:5px 0 7px; font-size:22px; }
+    .desc { font-size:14px; color:var(--muted); margin:0 0 22px; flex:1; }
+    .button { display:block; background:var(--purple); color:white; border-radius:12px; padding:10px 18px; text-align:center; font-size:14px; font-weight:bold; }
+    .button:hover { background:#5141c5; }
+    .note { color:#857b92; font-size:12px; margin:9px 0 0; }
+    footer { text-align:center; padding:22px 15px 35px; color:#798197; font-size:13px; }
+    @media(max-width:660px){ .hero {padding:65px 18px 95px;} main {margin-top:-40px;padding:0 16px;} .grid{grid-template-columns:1fr;gap:15px;} .card{padding:23px;} .intro{padding:21px;} }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <span class="tag">✦ ملف أعمالي الرقمية ✦</span>
+    <h1>مرحبًا بك في معرض مواقعي</h1>
+    <p>هنا جمعت مشاريعي ومواقعي الإلكترونية في مكان واحد. اختَر المشروع الذي ترغب في زيارته واكتشفه!</p>
+  </header>
+  <main>
+    <section class="intro" aria-label="مقدمة">
+      <strong>مشاريعي الإلكترونية ✨</strong>
+      <p>أربعة مشاريع متنوعة — اضغط على «زيارة الموقع» لفتح المشروع في صفحة جديدة.</p>
+    </section>
+    <section class="grid" aria-label="روابط المشاريع">
+      <article class="card">
+        <div class="emoji coffee" aria-hidden="true">☕</div>
+        <span class="number">المشروع 01</span>
+        <h2>رِواق | متجر إلكتروني</h2>
+        <p class="desc">تجربة تسوق للقهوة والأكواب والهدايا بتصميم أنيق.</p>
+        <a class="button" href="https://e-commerce-nest.lovable.app/" target="_blank" rel="noopener noreferrer">زيارة الموقع ↗</a>
+      </article>
+      <article class="card">
+        <div class="emoji bolt" aria-hidden="true">⚡</div>
+        <span class="number">المشروع 02</span>
+        <h2>مشروعي على Bolt</h2>
+        <p class="desc">رابط المشروع على منصة Bolt.</p>
+        <a class="button" href="https://bolt.new/p/71592352" target="_blank" rel="noopener noreferrer">فتح المشروع ↗</a>
+        <p class="note">قد يتطلب هذا الرابط تسجيل الدخول إلى Bolt.</p>
+      </article>
+      <article class="card">
+        <div class="emoji resume" aria-hidden="true">💼</div>
+        <span class="number">المشروع 03</span>
+        <h2>السيرة الذاتية الرقمية</h2>
+        <p class="desc">صفحة تعريفية رقمية تعرض المهارات والمشاريع والخبرات.</p>
+        <a class="button" href="https://arabic-digital-resum-vqy6.bolt.host/" target="_blank" rel="noopener noreferrer">زيارة الموقع ↗</a>
+      </article>
+      <article class="card">
+        <div class="emoji access" aria-hidden="true">♿</div>
+        <span class="number">المشروع 04</span>
+        <h2>مدينة بلا عوائق</h2>
+        <p class="desc">منصة للتعرّف على مدى سهولة الوصول إلى الأماكن المناسبة للجميع.</p>
+        <a class="button" href="https://access-before-you-go.lovable.app/" target="_blank" rel="noopener noreferrer">زيارة الموقع ↗</a>
+      </article>
+    </section>
+  </main>
+  <footer>صُنعت هذه الصفحة لتجمع مشاريعي الرقمية في مكان واحد ♡</footer>
+</body>
+</html>
